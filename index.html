@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinau Koding</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: DodgerBlue;
+      }
+
+      /* Responsive layout - makes a one column layout instead of a two-column layout */
+      @media (max-width: 500px) {
+        .flex-container {
+          flex-direction: column;
+          flex-wrap: nowrap;
+          background-color: DodgerBlue;
+        }
+      }
+
+      .flex-container > div {
+        width: 100px;
+        line-height: 150px;
+        background-color: #f1f1f1;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: dodgerblue;
+        padding: 10px;
+      }
+      .container > div {
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Ini adalah judul   -->
+    <h1 id="judul" class="judul tulisan">Yuk Belajar Coding</h1>
+    <p class="tulisan">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perferendis
+      distinctio facilis recusandae at, aut beatae consequatur, repellat magnam
+      dolorem tempore officiis voluptatem sed eveniet itaque veritatis a vitae
+      ad!
+    </p>
+    <a href="./halaman_lain.html">Klik </a>
+    <br />
+    <a href="./halaman_lain.html">Klik 2</a>
+    <br />
+    <img width="400" height="200" src="./ironman.jpeg" alt="Foto Ironman" />
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Umur</th>
+        <th>Alamat</th>
+      </tr>
+      <tr>
+        <td>Ironman</td>
+        <td>40</td>
+        <td>Jakarta</td>
+      </tr>
+    </table>
+    <!-- Ini unordered list -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <!-- Ini Ordered list -->
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input
+        style="color: white; background-color: black"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+    <div style="border: 10px solid red; padding: 10px; margin-bottom: 10px">
+      Ini teks biasa
+    </div>
+    <span>Test</span>
+    <span>Test2</span>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+  </body>
+</html>
